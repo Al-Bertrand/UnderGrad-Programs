@@ -1,9 +1,10 @@
 public class minesweeper{
    public static void main(String[] args){
    
-      int m = Integer.parseInt(args[0]);//rows
-      int n = Integer.parseInt(args[1]);//columns
+      int m = Integer.parseInt(args[0]);//rows directly from the user in the argument line
+      int n = Integer.parseInt(args[1]);//columns directly from the user in the argument line
       double p = Double.parseDouble(args[2]);//probablity calculator strictly less than 1 holding a lot of digits
+                                             //directly from the user in the argument line
 
       boolean[][] field = new boolean[m+2][n+2];//create a boolean array
       field[m][n] = false;//declare everything false; we want to check each slot and change it to true in order to print
